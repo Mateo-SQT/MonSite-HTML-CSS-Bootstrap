@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" name="descrition"
+    content="Site Web de l'association les coureurs de cretes. Activités et évènements : Randonnées, Via Ferrata, Trails et séances en salle. A partir du mois de Mai jusqu'au mois d'Octobre. Informations supplémentaires et réservations sur notre site." />
+  <meta name="keywords"
+    content="association, Coureurs, coureurs de cretes, course, montagne, foulée, sport, Via Ferrata, Trails, Randonnées, Séances en salle" />
+  <meta name="author" content="Matéo Souquet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>Les Coureurs de Crêtes</title>
+  <!-- FAVICON_IO -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="favicon_io/site.webmanifest">
+
+
+  <!-- STYLE -->
+  <link rel="stylesheet" type="text/css" href="Projet.css" media="all" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <header> <!-- ========== HEADER ========== -->
+
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="title" href="Projet.html">Coureurs de Crêtes </label>
+      <ul>
+        <li><a class="active" href="Projet.html">Accueil</a></li>
+        <li><a href="evenements.html">Evènements</a></li>
+        <li><a href="a-propos-de-nous.html">A propos de nous</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main> <!-- ========== MAIN ========== -->
+
+    <article class="article">
+      <section class="section"> <!--  Petite navbar pour utilisateur de laptop et desktop (+tablette) -->
+        <nav class="navbar navbar-expand-lg" id="navbar-one"
+          style="border-top-right-radius: 80px 80px; border-bottom-right-radius: 80px 80px; width: 260px; position: fixed; margin-top: 100px;">
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDropdownMenuLink"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Choisir son activité
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#Randonnées">Randonnées</a>
+                  <a class="dropdown-item" href="#Trails">Trails</a>
+                  <a class="dropdown-item" href="#Via">Via Ferrata</a>
+                  <a class="dropdown-item" href="#Salle">En Salle</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </section>
+      <section class="section"> <!--  explications inscriptions -->
+        <p><br><br><br>Toutes nos activités sont disponibles et peuvent être réservées du <b>2 Mai au 30 Octobre
+            inclus.</b><br>
+          Des évènements seront organisés chaque week-end alors téléchargez vite votre doosard en bas de cette page !
+        </p>
+        <p>Pour vous inscrire c'est simple : <b>Contactez-nous par mail ou par téléphone.</b> <br> Vous passez près de
+          chez-nous, alors rendez-vous directement à <b>l'accueil de notre QG.</b></p>
+      </section>
+      <section class="section" id="Randonnées">
+        <div class="four-titles"><b>Nos Randonnées</b></div>
+        <div class="row align-items-center">
+          <div class="card" style="width: 20rem; border-color: darkgreen; border-width: 3px;">
+            <img class="card-img-top" src="images/randonneur.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Randonner tous niveaux</h5> <!--  Body card  -->
+              <div class="card-text">Une randonnée accessible à tous. Pour tous les niveaux : débutant, amateur ou
+                professionnel et surtout tous les âges.</div>
+              <button type="button" class="btn btn-success" href="#" data-toggle="modal"
+                data-target="#FirstModalCenter">En savoir plus</button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="FirstModalCenter" tabindex="-1" role="dialog"
+              aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Randonner tous niveaux</h5> <!-- Title -->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <table class="table table-striped"> <!--  tableau explicatif  -->
+                      <thead>
+                        <tr>
+                          <th scope="col">Distance</th>
+                          <th scope="col">Temps</th>
+                          <th scope="col">Dénivelé</th>
+                          <th scope="col">Difficulté</th>
+                          <th scope="col">Tarifs</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>3km</td>
+                          <td>1h</td>
+                          <td>80m</td>
+                          <td>Tous niveaux</td>
+                          <td>5€/pers</td>
+                        </tr>
+                        <tr>
+                          <td>7km</td>
+                          <td>2h30</td>
+                          <td>190m</td>
+                          <td>Tous niveaux</td>
+                          <td>7€/pers</td>
+                        </tr>
+                        <tr>
+                          <td>12km</td>
+                          <td>5h - 7h</td>
+                          <td>415m</td>
+                          <td>Tous niveaux</td>
+                          <td>10€/pers</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Retour</button>
+                    <!-- Btn retour -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem; border-color: darkgreen; border-width: 3px;">
+            <img class="card-img-top" src="images/photo2.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Randonner au coucher du soleil</h5> <!--  Body card  -->
+              <div class="card-text">Une randonnée conseillée aux amateurs pour admirer un coucher de soleil en haut du
+                pic.</div>
+              <button type="button" class="btn btn-success" href="#" data-toggle="modal"
+                data-target="#SecondModalCenter">En savoir plus</button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="SecondModalCenter" tabindex="-1" role="dialog"
+              aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Randonner au coucher du soleil</h5>
+                    <!-- Title -->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <table class="table table-striped"> <!--  tableau explicatif  -->
+                      <thead>
+                        <tr>
+                          <th scope="col">Distance</th>
+                          <th scope="col">Temps</th>
+                          <th scope="col">Dénivelé</th>
+                          <th scope="col">Difficulté</th>
+                          <th scope="col">Tarifs</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>3km</td>
+                          <td>1h</td>
+                          <td>80m</td>
+                          <td>Tous niveaux</td>
+                          <td>5€/pers</td>
+                        </tr>
+                        <tr>
+                          <td>7km</td>
+                          <td>2h30</td>
+                          <td>190m</td>
+                          <td>Tous niveaux</td>
+                          <td>7€/pers</td>
+                        </tr>
+                        <tr>
+                          <td>12km</td>
+                          <td>5h - 7h</td>
+                          <td>415m</td>
+                          <td>Tous niveaux</td>
+                          <td>10€/pers</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Retour</button>
+                    <!-- Btn retour -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem; border-color: darkgreen; border-width: 3px;">
+            <img class="card-img-top" src="images/randonneurs.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Randonner en groupe</h5> <!--  Body card  -->
+              <div class="card-text">Une randonnée conseillée pour les familles ou pour les groupes scolaire et les
+                classes vertes.</div>
+              <button type="button" class="btn btn-success" href="#" data-toggle="modal"
+                data-target="#ThirdModalCenter">En savoir plus</button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="ThirdModalCenter" tabindex="-1" role="dialog"
+              aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Randonner en groupe</h5> <!-- Title -->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <table class="table table-striped"> <!--  tableau explicatif  -->
+                      <thead>
+                        <tr>
+                          <th scope="col">Distance</th>
+                          <th scope="col">Temps</th>
+                          <th scope="col">Dénivelé</th>
+                          <th scope="col">Difficulté</th>
+                          <th scope="col">Tarifs</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>3km</td>
+                          <td>1h</td>
+                          <td>80m</td>
+                          <td>Tous niveaux</td>
+                          <td>5€/pers</td>
+                        </tr>
+                        <tr>
+                          <td>7km</td>
+                          <td>2h30</td>
+                          <td>190m</td>
+                          <td>Tous niveaux</td>
+                          <td>7€/pers</td>
+                        </tr>
+                        <tr>
+                          <td>12km</td>
+                          <td>5h - 7h</td>
+                          <td>415m</td>
+                          <td>Tous niveaux</td>
+                          <td>10€/pers</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Retour</button>
+                    <!-- Btn retour -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+      <section class="section" id="Trails">
+        <div class="four-titles"><b>Nos Trails</b></div>
+        <div class="row align-items-center">
+          <div class="card" style="width: 20rem; border-color: darkgreen; border-width: 3px;">
+            <img class="card-img-top" src="images/photo1.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Trails en solitaire</h5> <!--  Body card  -->
+              <div class="card-text">Des trails, courses à pied en montagne sur une longue distance, seul et nous
+                fournissons cartes et balisages. </div>
+              <button type="button" class="btn btn-success" href="#" data-toggle="modal"
+                data-target="#FourthModalCenter">En savoir plus</button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="FourthModalCenter" tabindex="-1" role="dialog"
+              aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Trails en solitaire</h5> <!-- Title -->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <table class="table table-striped"> <!--  tableau explicatif  -->
+                      <thead>
+                        <tr>
+                          <th scope="col">Distance</th>
+                          <th scope="col">Temps</th>
+                          <th scope="col">Dénivelé</th>
+                          <th scope="col">Difficulté</th>
+                          <th scope="col">Tarifs</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>15km</td>
+                          <td>55 min - 2h30</td>
+                          <td>300m</td>
+                          <td>Amateur</td>
+                          <td>45€/pers</td>
+                        </tr>
+                        <tr>
+                          <td>20km</td>
+                          <td>1h15 - 3h</td>
+                          <td>450m</td>
+                          <td>Amateur</td>
+                          <td>57€/pers</td>
+                        </tr>
+                        <tr>
+                          <td>35km</td>
+                          <td>2h30 - 5h</td>
+                          <td>600m</td>
+                          <td>Amateur</td>
+                          <td>70€/pers</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Retour</button>
+                    <!-- Btn retour -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem; border-color: darkgreen; border-width: 3px;">
+            <img class="card-img-top" src="images/groupe1.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Trails en groupe</h5> <!--  Body card  -->
+              <div class="card-text">Des trails, courses à pied en montagne sur une longue distance, en groupe et nous
+                fournissons cartes et balisages.</div>
+              <button type="button" class="btn btn-success" href="#" data-toggle="modal"
+                data-target="#FifthModalCenter">En savoir plus</button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="FifthModalCenter" tabindex="-1" role="dialog"
+              aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Trails en groupe</h5> <!-- Title -->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <table class="table table-striped"> <!--  tableau explicatif  -->
+                      <thead>
+                        <tr>
+                          <th scope="col">Distance</th>
+                          <th scope="col">Temps</th>
+                          <th scope="col">Dénivelé</th>
+                          <th scope="col">Difficulté</th>
+                          <th scope="col">Tarifs</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>15km</td>
+                          <td>55 min - 2h30</td>
+                          <td>300m</td>
+                          <td>Amateur</td>
+                          <td>45€/pers</td>
+                        </tr>
+                        <tr>
+                          <td>20km</td>
+                          <td>1h15 - 3h</td>
+                          <td>450m</td>
+                          <td>Amateur</td>
+                          <td>57€/pers</td>
+                        </tr>
+                        <tr>
+                          <td>35km</td>
+                          <td>2h30 - 5h</td>
+                          <td>600m</td>
+                          <td>Amateur</td>
+                          <td>70€/pers</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Retour</button>
+                    <!-- Btn retour -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem; border-color: darkgreen; border-width: 3px;">
+            <img class="card-img-top" src="images/photo6.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Trails au coucher du soleil</h5> <!--  Body card  -->
+              <div class="card-text">Des trails, courses à pied en montagne sur une longue distance, en groupe ou seul
+                au coucher du soleil, piste balisée.</div>
+              <button type="button" class="btn btn-success" href="#" data-toggle="modal"
+                data-target="#SixthModalCenter">En savoir plus</button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="SixthModalCenter" tabindex="-1" role="dialog"
+              aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Trails au coucher du soleil</h5> <!-- Title -->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <table class="table table-striped"> <!--  tableau explicatif  -->
+                      <thead>
+                        <tr>
+                          <th scope="col">Distance</th>
+                          <th scope="col">Temps</th>
+                          <th scope="col">Dénivelé</th>
+                          <th scope="col">Difficulté</th>
+                          <th scope="col">Tarifs</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>15km</td>
+                          <td>55 min - 2h30</td>
+                          <td>300m</td>
+                          <td>Amateur</td>
+                          <td>45€/pers</td>
+                        </tr>
+                        <tr>
+                          <td>20km</td>
+                          <td>1h15 - 3h</td>
+                          <td>450m</td>
+                          <td>Amateur</td>
+                          <td>57€/pers</td>
+                        </tr>
+                        <tr>
+                          <td>35km</td>
+                          <td>2h30 - 5h</td>
+                          <td>600m</td>
+                          <td>Amateur</td>
+                          <td>70€/pers</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Retour</button>
+                    <!-- Btn retour -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="Via">
+        <div class="four-titles"><b>Nos Via Ferrata</b></div>
+        <div class="row align-items-center">
+          <div class="card" style="width: 20rem; border-color: darkgreen; border-width: 3px;">
+            <img class="card-img-top" src="images/groupe.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Via Ferrata en groupe</h5> <!--  Body card  -->
+              <div class="card-text">Itinéraire aménagé dans une paroi rocheuse, équipé avec des éléments métalliques
+                spécifiques destinés à faciliter la progression, à faire en groupe et adapté aux débutants. </div>
+              <button type="button" class="btn btn-success" href="#" data-toggle="modal"
+                data-target="#SeventhModalCenter">En savoir plus</button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="SeventhModalCenter" tabindex="-1" role="dialog"
+              aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Via Ferrata en groupe</h5> <!-- Title -->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <table class="table table-striped"> <!--  tableau explicatif  -->
+                      <thead>
+                        <tr>
+                          <th scope="col">Distance</th>
+                          <th scope="col">Temps</th>
+                          <th scope="col">Dénivelé</th>
+                          <th scope="col">Difficulté</th>
+                          <th scope="col">Tarifs</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>5km</td>
+                          <td>3h</td>
+                          <td>300m</td>
+                          <td>Tous niveaux</td>
+                          <td>15€/pers</td>
+                        </tr>
+                        <tr>
+                          <td>8km</td>
+                          <td>3h30 - 4h</td>
+                          <td>450m</td>
+                          <td>Tous niveaux</td>
+                          <td>20€/pers</td>
+                        </tr>
+                        <tr>
+                          <td>10km</td>
+                          <td>4h - 5h</td>
+                          <td>700m</td>
+                          <td>Amateur</td>
+                          <td>25€/pers</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Retour</button>
+                    <!-- Btn retour -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem; border-color: darkgreen; border-width: 3px;">
+            <img class="card-img-top" src="images/vide.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Via Ferrata dans le vide</h5> <!--  Body card  -->
+              <div class="card-text">Itinéraire aménagé dans une paroi rocheuse, équipé avec des éléments métalliques
+                spécifiques destinés à faciliter la progression, à faire seul ou en groupe. Attention au vide !</div>
+              <button type="button" class="btn btn-success" href="#" data-toggle="modal"
+                data-target="#EighthModalCenter">En savoir plus</button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="EighthModalCenter" tabindex="-1" role="dialog"
+              aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Via Ferrata dans le vide</h5> <!-- Title -->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <table class="table table-striped"> <!--  tableau explicatif  -->
+                      <thead>
+                        <tr>
+                          <th scope="col">Distance</th>
+                          <th scope="col">Temps</th>
+                          <th scope="col">Dénivelé</th>
+                          <th scope="col">Difficulté</th>
+                          <th scope="col">Tarifs</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>5km</td>
+                          <td>3h</td>
+                          <td>300m</td>
+                          <td>Tous niveaux</td>
+                          <td>15€/pers</td>
+                        </tr>
+                        <tr>
+                          <td>7km</td>
+                          <td>3h - 4h</td>
+                          <td>450m</td>
+                          <td>Tous niveaux</td>
+                          <td>20€/pers</td>
+                        </tr>
+                        <tr>
+                          <td>9km</td>
+                          <td>4h - 5h</td>
+                          <td>700m</td>
+                          <td>Amateur</td>
+                          <td>25€/pers</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Retour</button>
+                    <!-- Btn retour -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem; border-color: darkgreen; border-width: 3px;">
+            <img class="card-img-top" src="images/pour les aguerris.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Via Ferrata pour les plus aguerris</h5> <!--  Body card  -->
+              <div class="card-text">Itinéraire aménagé dans une paroi rocheuse, équipé avec des éléments métalliques
+                spécifiques destinés à faciliter la progression, à faire en groupe et non adapté aux débutants.</div>
+              <button type="button" class="btn btn-success" href="#" data-toggle="modal"
+                data-target="#NinthModalCenter">En savoir plus</button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="NinthModalCenter" tabindex="-1" role="dialog"
+              aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Via Ferrata pour les plus aquerris</h5>
+                    <!-- Title -->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <table class="table table-striped"> <!--  tableau explicatif  -->
+                      <thead>
+                        <tr>
+                          <th scope="col">Distance</th>
+                          <th scope="col">Temps</th>
+                          <th scope="col">Dénivelé</th>
+                          <th scope="col">Difficulté</th>
+                          <th scope="col">Tarifs</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>7km</td>
+                          <td>3h</td>
+                          <td>600m</td>
+                          <td>Amateur</td>
+                          <td>20€/pers</td>
+                        </tr>
+                        <tr>
+                          <td>8km</td>
+                          <td>3h30 - 4h</td>
+                          <td>650m</td>
+                          <td>Amateur</td>
+                          <td>25€/pers</td>
+                        </tr>
+                        <tr>
+                          <td>10km</td>
+                          <td>4h - 5h</td>
+                          <td>800m</td>
+                          <td>Professionnel</td>
+                          <td>30€/pers</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Retour</button>
+                    <!-- Btn retour -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="Salle">
+        <div class="four-titles"><b>Nos activités en salle</b></div> <!--  Body card  -->
+        <div class="row align-items-center">
+          <div class="card" style="width: 20rem; border-color: darkgreen; border-width: 3px;">
+            <img class="card-img-top" src="images/coureur sur tapis.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Entrainements conseillés aux hommes</h5>
+              <div class="card-text">Plusieurs programmes en salle conseillés aux hommes, orientés crossfit pour gagner
+                en puissance, resistance à l'effort et endurance !</div>
+              <button type="button" class="btn btn-success" href="#" data-toggle="modal"
+                data-target="#TenthModalCenter">En savoir plus</button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="TenthModalCenter" tabindex="-1" role="dialog"
+              aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Entrainements conseillés aux hommes</h5>
+                    <!-- Title -->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Pour plus de renseignements, contactez nous. <!-- Text -->
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Retour</button>
+                    <!-- Btn retour -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem; border-color: darkgreen; border-width: 3px;">
+            <img class="card-img-top" src="images/coureuse sur tapis.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Entrainements conseillés aux femmes</h5> <!--  Body card  -->
+              <div class="card-text">Plusieurs programmes en salle conseillés aux femmes, orientés crossfit pour gagner
+                en puissance, resistance à l'effort et endurance !</div>
+              <button type="button" class="btn btn-success" href="#" data-toggle="modal"
+                data-target="#EleventhModalCenter">En savoir plus</button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="EleventhModalCenter" tabindex="-1" role="dialog"
+              aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Entrainements conseillés aux femmes</h5>
+                    <!-- Title -->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Pour plus de renseignements, contactez nous. <!-- Text -->
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Retour</button>
+                    <!-- Btn retour -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem; border-color: darkgreen; border-width: 3px;">
+            <img class="card-img-top" src="images/mixte.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Entrainements mixtes</h5> <!--  Body card  -->
+              <div class="card-text">Plusieurs programmes en salle conseillés aux hommes et aux femmes, orientés
+                crossfit pour gagner en puissance, resistance à l'effort et endurance !</div>
+              <button type="button" class="btn btn-success" href="#" data-toggle="modal"
+                data-target="#TwelfthModalCenter">En savoir plus</button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="TwelfthModalCenter" tabindex="-1" role="dialog"
+              aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Entrainements mixtes</h5> <!-- Title -->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Pour plus de renseignements, contactez nous. <!-- Text -->
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Retour</button>
+                    <!-- Btn retour -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="download" style="margin-bottom: 50px;"> <!--  Button télécherger le dossard  -->
+        <button type="button-download" class="btn btn-lg btn-success"><a href="images/Dossard.png"
+            style="color: white; text-decoration: none;"><i class="fa-light fa-cloud-arrow-down"
+              style="color: #ffffff;"></i> Je télécharge mon dossard</a></button>
+      </section>
+    </article>
+
+
+  </main>
+
+
+  <!-- ========== FOOTER ========== --> <!--  commenté dans le fichier Projet.html  -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="grid">
+          <div class="col-md-5">
+            <h4>L'association</h4>
+            <ul>
+              <li><a>Coureurs de Crêtes &copy;</a></li>
+              <li><a>"Atteignez des sommets"</a></li>
+              <img src="images/logo2.png" class="logo2" alt="Logo2 responsive">
+            </ul>
+          </div>
+          <div class="col-md-5">
+            <h4>Suivez-nous !</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/mateo_souquet"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/mateo_sqt/?igshid=YmMyMTA2M2Y?"><i class="fab fa-instagram"></i></a>
+              <a href="https://twitter.com/Mateo_Sqt"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <h4>Horaires du QG</h4>
+            <ul>
+              <li><a>Mardi 9:00 - 17:00</a></li>
+              <li><a>Mercredi 9:00 - 17:00</a></li>
+              <li><a>Jeudi 9:00 - 17:00</a></li>
+              <li><a>Vendredi 9:00 - 17:00</a></li>
+              <li><a>Samedi 8:00 - 13:00 </a></li>
+            </ul>
+          </div>
+          <div class="col-md-5">
+            <h4>Contact</h4>
+            <ul>
+              <li><a>22 Bd de la grande foulée, 65110 Cauterets</a></li>
+              <li><a>05 62 22 22 22</a></li>
+              <li><a>asso.coureursdecretes@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+</html>
