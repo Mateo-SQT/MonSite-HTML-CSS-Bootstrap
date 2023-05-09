@@ -1,0 +1,15 @@
+===================== COUREURS DE CRETES ==============================
+
+Mon site web contient 3 pages web
+- La présentation de l'association "Accueil"
+- Les évênements / activités que propose l'association "evènements"
+- Puis des informations suppémentaires sur l'association "A propos de nous"
+
+C'est une association fictive basée dans les pyrénées. 
+
+Interface pensée mobile first (responsive)
+
+Les pages contiennent du texte, des tableaux, des images, des logos, un carrousel, 
+des cartes, des boutons fonctionnels, des socials links, une police de caractères globale, 
+une carte interactive.		(Bootstrap)
+
