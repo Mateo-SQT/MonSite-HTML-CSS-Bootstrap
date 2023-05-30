@@ -1,0 +1,245 @@
+/******************************************************
+* Framework CSS : Bootstrap                           *
+* Principalement : agencement -  boutons - adaptation *
+******************************************************/
+
+
+/****************************************
+* Front-desk :                          *
+* - créer une nouvelle partie           *
+* - retient le score courant            *
+* - lance le dé                         *
+* - 2 joueurs                           *
+* - lire les règles du jeu              *
+* - animation si victoire               *
+* - notifier aux moments clés           *
+* - pouvoir modifier les pseudos        *
+****************************************/
+
+/* importation de la police Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,10&family=Satisfy&display=swap');
+
+
+/* all inclusive */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  width: auto;
+  background-image: url(images/tapis-vert.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color:#395a3a ;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+main {
+  position: relative;
+  width: 120rem;
+  height: 100vh;
+  border-radius: 9px;
+  overflow: hidden;
+  display: flex;
+}
+
+/* modification des containers */
+.custom-container {
+  height: 100vh;
+}
+.custom-container {
+  min-height: 80vh; 
+}
+
+#custom-container {
+  min-height: 100vh;
+  min-height: calc(100vh - 100px);
+  overflow-y: auto;
+}
+
+
+/* class joueurs */
+
+.player {
+  flex: 50%;
+  padding: 4rem;
+  padding-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.75s;
+  align-items: center;
+}
+
+.joueur--0 {
+  padding-right: 12rem;
+}
+
+.joueur--1 {
+  padding-left: 12rem;
+}
+
+
+.player--active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.player--active .name {
+  font-weight: 700;
+}
+
+.player--active .score {
+  font-weight: 400;
+}
+
+.player--active .current {
+  opacity: 1;
+}
+
+.player--winner {
+  background-color: goldenrod;
+}
+
+.player--winner .name {
+  font-weight: 700;
+  color: #2f2f2f;
+}
+
+.name {
+  position: relative;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+/* SCORES */
+
+.score {
+  font-size: 8rem;
+  font-weight: 300;
+  color: white;
+  margin-bottom: auto;
+  margin-top: 6rem;
+}
+
+
+.current0 {
+  background-color: goldenrod;
+  border-radius: 10px;
+  color: #fff;
+  width: 70%;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.75s;
+}
+
+.current1 {
+  background-color: goldenrod;
+  border-radius: 10px;
+  color: #fff;
+  width: 70%;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.75s;
+}
+
+.current-label {
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  color: #fff;
+}
+
+.current-score {
+  font-size: 3.5rem;
+}
+
+
+/* DICE */
+
+.dice {
+  position: absolute;
+  left: 46.5%;
+  top: 45%;
+  height: 11rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2); 
+
+}
+@keyframes fadeAnimation {
+  0% {
+    opacity: 0;
+    transform : rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform : rotate(900deg);
+  }
+}
+
+.turn {
+  animation: fadeAnimation 1s ease-in;
+}
+
+
+/* GIF victory */
+.victory-image {
+  display: block;
+  max-width: 60%;
+  height: auto;
+}
+
+.vainqueur0 {
+  display: none;
+  max-width: 100%;
+  height: auto;
+}
+
+.vainqueur1 {
+  display: none;
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* ------------------ */
+.icons {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ------------------- */
+@media (max-width: 767px) { /*appareils avec une largeur maximale de 767 pixels */
+  body {
+    transform: rotate(-90deg); /* Rotation de 90 degrés (anti-horaire)*/
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+}
+
+
+
+
